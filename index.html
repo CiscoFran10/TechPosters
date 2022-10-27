@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./pages/home/style.min.css" />
+  <script type="module" src="./index.js" defer></script>
+  <title>TechPosters - Home</title>
+</head>
+
+<body>
+  <div class="header-bg">
+    <header class="header">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="TechPosters"></div>
+      <nav class="nav">
+        <ul class="menu" role="menu">
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  </div>
+
+  <main aria-label="Feed">
+    <div class="container grid">
+      <section class="user-container">
+        <div class="user-profile">
+          <div class="user-img">
+            <img src="./assets/img/user1.svg" alt="profile image">
+          </div>
+          <div class="user-info">
+            <h1 class="user-name">Samuel Leão</h1>
+            <p class="user-description">Front end Engineer</p>
+          </div>
+        </div>
+
+        <form action="#" class="form">
+          <label for="post-title" hidden="true">Post title</label>
+          <input type="text" id="post-title" placeholder="Digitar título do post">
+          <label for="post-content" hidden="true">Post content</label>
+          <textarea name="post-content" rows="4" id="post-content" placeholder="Digitar descrição do post"></textarea>
+          <button disabled class="btn btn-primary" data-post="create-post">Postar</button>
+        </form>
+      </section>
+
+      <aside class="aside">
+        <h1 class="title">Sugestões para você seguir
+        </h1>
+        <ul class="users-list" role="list">
+          <li class="user-profile">
+            <div class="user-img">
+              <img src="./assets/img/user3.svg" alt="profile image">
+            </div>
+            <div class="user-info">
+              <h2 class="user-name">Carlos Lima</h2>
+              <p class="user-description">UX e UI Designer</p>
+            </div>
+            <button class="btn btn-outline" data-button="follow">Seguir</button>
+          </li>
+          <li>
+            <div class="user-profile">
+              <div class="user-img">
+                <img src="./assets/img/user7.svg" alt="profile image">
+              </div>
+              <div class="user-info">
+                <h2 class="user-name">Filipe Gutierry</h2>
+                <p class="user-description">Front end Engineer</p>
+              </div>
+              <button class="btn btn-outline" data-button="follow">Seguir</button>
+            </div>
+          </li>
+          <li>
+            <div class="user-profile">
+              <div class="user-img">
+                <img src="./assets/img/user6.svg" alt="profile image">
+              </div>
+              <div class="user-info">
+                <h2 class="user-name">Barbara Persuhn</h2>
+                <p class="user-description">Back end Engineer</p>
+              </div>
+              <button class="btn btn-outline" data-button="follow">Seguir</button>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <section aria-label="Feed" class="posts-container">
+        <h1 class="title">Posts</h1>
+        <div class="posts-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <div class="modal-wrapper" id="post-modal">
+    <div class="modal">
+      <button class="close-modal" data-control-modal="post-modal">X</button>
+      <div class="user-profile">
+        <div class="user-img">
+          <img src="" alt="profile image">
+        </div>
+        <div class="user-info">
+          <h2 class="user-name"></h2>
+          <p class="user-description"></p>
+        </div>
+      </div>
+
+      <div class="user-post">
+        <h2 class="post-title"></h2>
+        <p class="post-description"></p>
+      </div>
+    </div>
+</body>
+
+</html>

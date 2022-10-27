@@ -1,0 +1,90 @@
+.btn {
+	display: block;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 1rem;
+	font-family: inherit;
+	font-weight: 400;
+	border-radius: var(--radius-1);
+	padding: 0.5rem 0.875rem;
+	border: none;
+	transition: 0.3s;
+}
+
+.btn:disabled {
+	color: var(--color-grey-3);
+	background-color: var(--color-grey-4);
+}
+
+.btn-primary {
+	color: var(--color-white-fixed);
+	background-color: var(--brand-1);
+	margin-left: auto;
+}
+
+.btn-primary:hover {
+	background-color: var(--brand-2);
+}
+
+.btn-grey-1 {
+	color: var(--color-white-fixed);
+	background-color: var(--color-grey-1);
+}
+
+.btn-grey-1:hover {
+	background-color: var(--color-gray-0);
+}
+
+.btn-outline {
+	color: var(--color-grey-1);
+	background-color: var(--color-white-fixed);
+	border: 2px solid var(--color-grey-1);
+	padding: 0.2rem 1rem;
+	align-self: flex-start;
+	justify-self: flex-end;
+}
+
+.btn-outline:hover {
+	color: var(--brand-1);
+	background-color: var(--color-grey-5);
+	border: 2px solid var(--brand-1);
+}
+
+.btn-outline:active {
+	background-color: var(--brand-1);
+	color: var(--color-white-fixed);
+	border: 2px solid var(--brand-1);
+}
+
+.btn-outline.active {
+	background-color: var(--brand-1);
+	color: var(--color-white-fixed);
+	border: none;
+}
+
+.btn-white {
+	color: var(--color-grey-1);
+	background-color: var(--color-white-fixed);
+}
+
+.btn-white:hover {
+	background-color: var(--color-grey-5);
+}
+
+.btn-favorite {
+	color: var(--color-grey-3);
+	transition: 0.3s;
+	padding: 0.5rem;
+	margin-left: 30px;
+	position: relative;
+}
+
+.btn-favorite.active {
+	color: var(--like);
+}
+
+.btn-favorite .likes-counter {
+	position: absolute;
+	right: -5px;
+	pointer-events: none;
+}
